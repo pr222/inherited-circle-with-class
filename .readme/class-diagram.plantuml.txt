@@ -1,0 +1,14 @@
+@startuml
+class Ellipse {
+  +a: number
+  +b: number
+  +area: number {readOnly}
+  +circumference: number {readOnly}
+  +toString(): string
+}
+
+class Circle extends Ellipse {
+  +radius: number
+  +toString(): string
+}
+@enduml
