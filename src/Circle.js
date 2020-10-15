@@ -18,22 +18,24 @@ import { Ellipse } from './Ellipse.js'
  * @extends {Ellipse} - Inherits from Ellipse class.
  */
 export class Circle extends Ellipse {
-    constructor (radius) {
-        super() // Call the parent constructor
-        this.radius = radius
-    }
-
-
-
-    // Area
-    // Circumference 
 /**
- * Represents the circle object as a string.
+ * Creates an instance of Circle.
  *
- * @return {string} - A string representing the object.
+ * @param {number} radius - The radius of the circle
  * @memberof Circle
  */
-toString () {
-        return `radius: ${this.radius}, area: ${this.area.toFixed(1)}, circumference: ${this.circumference.toFixed(1)}`
-    }
+  constructor (radius) {
+    super(radius, radius) // Call the parent constructor
+    this.radius = radius
+  }
+
+  /**
+   * Represents the circle object as a string.
+   *
+   * @returns {string} - A string representing the object.
+   * @memberof Circle
+   */
+  toString () {
+    return `radius: ${this.radius}, area: ${this.area.toFixed(1)}, circumference: ${this.circumference.toFixed(1)}`
+  }
 }
