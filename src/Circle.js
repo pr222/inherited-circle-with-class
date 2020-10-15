@@ -28,10 +28,22 @@ export class Circle extends Ellipse {
     super(radius, radius) // Call the parent constructor
   }
 
+  /**
+   * Gets the radius.
+   *
+   * @memberof Circle
+   * @returns {number} - Number
+   */
   get radius () {
     return this.a
   }
 
+  /**
+   * Sets the radius of the object.
+   *
+   * @memberof Circle
+   * @param {number} value - The radius.
+   */
   set radius (value) {
     this.a = this.b
     this.b = value
