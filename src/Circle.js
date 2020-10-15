@@ -26,7 +26,15 @@ export class Circle extends Ellipse {
  */
   constructor (radius) {
     super(radius, radius) // Call the parent constructor
-    this.radius = radius
+  }
+
+  get radius () {
+    return this.a
+  }
+
+  set radius (value) {
+    this.a = this.b
+    this.b = value
   }
 
   /**
